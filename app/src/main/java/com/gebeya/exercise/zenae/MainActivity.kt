@@ -12,8 +12,10 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         cont.setOnClickListener(View.OnClickListener {
-            intent = Intent(this, LoginActivity::class.java.simpleName)
-
+            intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
         })
+
+
     }
 }
